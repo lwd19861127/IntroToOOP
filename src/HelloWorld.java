@@ -10,6 +10,7 @@ public class HelloWorld {
         System.out.print("Bye!");
         System.out.print("Bye!");
         System.out.println("iPad");
+        System.out.println("Git Test");
     }
     // python - interpreted language
     // java - complied language
