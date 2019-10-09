@@ -1,7 +1,16 @@
+import java.util.Arrays
+
 public class ArraysExample {
 	public static void main (String[] args) {
-		// 1.array-literal (initialization)
+		// 1.array-literal (initialization) (Array length is fixed) -stack (not data segment)
 		int[] arr1 = {1, 2, 3, 4, 5};
+		
+		int[] arr2 = {1, 2, 3, 4, 5}; // creating a new array stack
+		arr2[0] = 6; // arr1's content won't change
+		
+		arr2 = arr1; // arr2 point to the arr1 content
+		arr2[0] = 6; // arr1's content will change
+
 		// the length(size) of array
 		System.out.println(arr1.length);
 		
@@ -37,7 +46,17 @@ public class ArraysExample {
 			arr2[i] = i * 10;
 		}
 		
-		//print the address
+		// print the address
 		System.out.println(arr2);
+		
+		// print the elements
+		System.out.println(Arrays.toString(arr2));
+		
+		String[] countries = {"Canada", "China"};
+		countries[0] = "USA";
+		
+		for(String country: countries) {
+			System.out.println(country);
+		}
 	}
 }
