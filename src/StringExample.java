@@ -8,12 +8,12 @@ public class StringExample {
 		System.out.println(name == name1); // true: have same address
 		
 		String name2 = new String("Derrick"); // heap - data seg
-		System.out.println(name == name2); // false: have diffrent address
+		System.out.println(name == name2); // false: have different address
 		
 		String name3 = new String("Derrick");
-		System.out.println(nam2 == name3); // false: have diffrent address
+		System.out.println(name2 == name3); // false: have different address
 		// always use .equals() to compare string objects!
-		System.out.printle(name.equals(name3)); //ture: have same content
+		System.out.println(name.equals(name3)); //true: have same content
 		
 		// Get the length of string
 		String coffee = "Starbucks";
@@ -29,7 +29,7 @@ public class StringExample {
 		
 		// for-loop to print all characters in string
 		for (int i = 0; i < coffee.length(); i++) {
-			System.out.println(coffee.substring(i,i+1); // String
+			System.out.println(coffee.substring(i,i+1)); // String
 			System.out.println(coffee.charAt(i)); // char
 		}
 		

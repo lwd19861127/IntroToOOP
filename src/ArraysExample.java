@@ -1,4 +1,4 @@
-import java.util.Arrays
+import java.util.Arrays;
 
 public class ArraysExample {
 	public static void main (String[] args) {
@@ -35,22 +35,22 @@ public class ArraysExample {
 		// 2.create an array with the size
 		// create a new arr obj with size 10.
 		// by default, it stores 10 zeros.
-		int[] arr2 = new int[10];
-		for(int e: arr2) {
+		int[] arr3 = new int[10];
+		for(int e: arr3) {
 			System.out.println(e); //10 zeros
 		}
-		arr2[0] = 10;
-		arr2[1] = 20;
-		arr2[2] = 30;
-		for(int i = 0; i < arr2.length; i++) {
-			arr2[i] = i * 10;
+		arr3[0] = 10;
+		arr3[1] = 20;
+		arr3[2] = 30;
+		for(int i = 0; i < arr3.length; i++) {
+			arr3[i] = i * 10;
 		}
 		
 		// print the address
-		System.out.println(arr2);
+		System.out.println(arr3);
 		
 		// print the elements
-		System.out.println(Arrays.toString(arr2));
+		System.out.println(Arrays.toString(arr3));
 		
 		String[] countries = {"Canada", "China"};
 		countries[0] = "USA";

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StaticMethods {
 	// method prototype, header
 	public static void printName(String name) {
@@ -39,7 +41,7 @@ public class StaticMethods {
 	
 	public static void main(String[] args) {
 		printName("Vancouver");
-		StaticMethods a = new StatciMethods();
+		StaticMethods a = new StaticMethods();
 		a.printCity("Victory");
 		
 		int x = 10;
@@ -50,13 +52,13 @@ public class StaticMethods {
 		
 		int[] arr = {1, 2, 3};
 		changeFirst(arr); // pass address
-		System.out.println(Array.toString(arr)); // 100, 2, 3
+		System.out.println(Arrays.toString(arr)); // 100, 2, 3
 		
 		int[] array = {1, 2, 3};
-		changeFirst2(array); // change addres in the method, original array does'nt cheange
-		System.out println(Array.toString(array)); // 1, 2, 3
+		changeFirst2(array); // change address in the method, original array does'nt cheange
+		System.out.println(Arrays.toString(array)); // 1, 2, 3
 		
-		System.out.println("x + y = " + addTwo(x + y));
+		System.out.println("x + y = " + addTwo(x, y));
 		
 	}
 }
