@@ -11,6 +11,11 @@ public class Queen extends Piece {
     }
 
     @Override
+    public String toString() {
+        return "Queen{value='" + super.getValue() + "\' + }";
+    }
+
+    @Override
     public void move() {
         System.out.println("Like bishop and rook");
     }

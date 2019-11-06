@@ -11,6 +11,11 @@ public class Knight extends Piece {
     }
 
     @Override
+    public String toString() {
+        return "Knight{value='" + super.getValue() + "\' + }";
+    }
+
+    @Override
     public void move() {
         System.out.println("Like an L");
     }

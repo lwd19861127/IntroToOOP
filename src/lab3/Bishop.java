@@ -10,6 +10,11 @@ public class Bishop extends Piece{
     }
 
     @Override
+    public String toString() {
+        return "Bishop{value='" + super.getValue() + "\' + }";
+    }
+
+    @Override
     public void move() {
         System.out.println("Diagonally");
     }

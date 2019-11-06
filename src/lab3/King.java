@@ -10,6 +10,11 @@ public class King extends Piece {
     }
 
     @Override
+    public String toString() {
+        return "King{value='" + super.getValue() + "\' + }";
+    }
+
+    @Override
     public void move() {
         System.out.println("One square");
     }

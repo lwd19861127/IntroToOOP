@@ -10,6 +10,11 @@ public class Rook extends Piece {
     }
 
     @Override
+    public String toString() {
+        return "Rook{value='" + super.getValue() + "\' + }";
+    }
+
+    @Override
     public void move() {
         System.out.println("Horizontally or vertically");
     }

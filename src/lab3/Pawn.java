@@ -42,15 +42,20 @@ public class Pawn extends Piece {
         return "Pawn{value='" + super.getValue() + "\' + }";
     }
 
-    public boolean equals(Pawn pawn) {
+    @Override
+    public boolean equals(Object obj) {
+        Pawn pawn = (Pawn) obj;
         if (super.isWhite() != pawn.isWhite() || promoted != pawn.isPromoted()) {
             return false;
         } else {
-            return newPiece.equals(pawn.getNewPiece()) ? true : false;
+            return newPiece.equals(pawn.getNewPiece());
         }
     }
 
     public void promote(Piece newPiece) {
-
+        if (!isPromoted()) {
+            this.newPiece = newPiece;
+            promoted = true;
+        }
     }
 }

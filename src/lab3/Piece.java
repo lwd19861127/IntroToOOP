@@ -25,8 +25,10 @@ public abstract class Piece {
         isWhite = white;
     }
 
-    public boolean equals(Piece piece) {
-        return (value == piece.value && isWhite == piece.isWhite) ? true : false;
+    @Override
+    public boolean equals(Object obj) {
+        Piece piece = (Piece) obj;
+        return value == piece.value && isWhite == piece.isWhite;
     }
 
     public abstract void move();
